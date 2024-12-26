@@ -8,7 +8,7 @@
     This is a protected content. You can access this content because you are
     signed in.
   </p>
-  <p>Session expiry: {$page.data.session?.expires}</p>
+  <p>Hello {$page.data.session?.user?.name}</p>
 {:else}
   <h1>Access Denied</h1>
 {/if}

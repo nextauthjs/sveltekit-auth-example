@@ -6,12 +6,12 @@
 <header>
   <div class="signedInStatus">
     <div class="nojs-show loaded">
-      <img
+      <!-- <img
         alt="User avatar"
         src={$page.data?.session?.user?.image ??
           `https://api.dicebear.com/9.x/thumbs/svg?seed=${Math.floor(Math.random() * 100000) + 1}&randomizeIds=true`}
         class="avatar"
-      />
+      /> -->
       {#if $page.data.session}
         <span class="signedInText">
           {$page.data.session.user?.email ?? $page.data.session.user?.name}
