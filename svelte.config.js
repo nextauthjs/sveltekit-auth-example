@@ -1,7 +1,8 @@
 import adapter from "@sveltejs/adapter-auto"
+/** @typedef {import('@sveltejs/kit').Config} Config */
 import { vitePreprocess } from "@sveltejs/vite-plugin-svelte"
 
-/** @type {import('@sveltejs/kit').Config} */
+ /** @type {Config} */ 
 const config = {
   // Consult https://kit.svelte.dev/docs/integrations#preprocessors
   // for more information about preprocessors
@@ -11,8 +12,7 @@ const config = {
     adapter: adapter(),
     alias: {
       $components: "src/components",
-      $lib: "src/components",
-      $routes: "src/routes",
+      $lib: "src/lib",
     },
   },
 }
